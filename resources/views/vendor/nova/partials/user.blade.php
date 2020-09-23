@@ -12,14 +12,13 @@
 </dropdown-trigger>
 
 <dropdown-menu slot="menu" width="200" direction="rtl">
-    <ul class="list-reset">
-        <li>
-            <form id="logout-form" method="POST" action="{{ route('logout') }}" style="display: none;">
-                @csrf
-            </form>
-            <a href="#" class="block no-underline text-90 hover:bg-30 p-3" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                {{ __('Logout') }}
-            </a>
-        </li>
-    </ul>
+    <dropdown-menu slot="menu" width="200" direction="rtl">
+        <ul class="list-reset">
+            <li>
+                <a href="{{ route('nova.logout') }}" class="block no-underline text-90 hover:bg-30 p-3">
+                    {{ __('Logout') }}
+                </a>
+            </li>
+        </ul>
+    </dropdown-menu>
 </dropdown-menu>
