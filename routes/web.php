@@ -1,6 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Laravel\Nova\Nova;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +20,6 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Nova::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
