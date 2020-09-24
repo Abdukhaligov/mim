@@ -13,6 +13,7 @@ class CreateSponsorsTable extends Migration{
       $table->id();
       $table->string("name");
       $table->text("link");
+      $table->string("channel_id")->nullable();
       $table->tinyInteger("type")->default(1);
       $table->boolean("required")->default(FALSE);
       $table->timestamps();
