@@ -1,5 +1,5 @@
 .idea
-.idea/mim.iml
+/secret
 /vendor/
 node_modules/
 npm-debug.log
