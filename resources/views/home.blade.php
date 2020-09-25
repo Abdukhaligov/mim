@@ -15,7 +15,11 @@
             @if(!$data["user"]->subscriber)
               <h1>Please subscribe to this channels</h1>
               @foreach($data["user"]->requiredSubscriptions as $sponsor)
-                <a target="_blank" href="{{$sponsor->link}}">{{$sponsor->name}}</a>
+                <div>
+                  <a target="_blank" href="{{$sponsor->link}}">{{$sponsor->name}}</a> <strong>
+                    <a href="{{ route('youtube_create_url')}}">CHECK</a>
+                  </strong>
+                </div>
               @endforeach
             @else
               <h1>Your account is activated</h1>
