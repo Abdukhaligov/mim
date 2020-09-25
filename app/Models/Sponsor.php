@@ -13,7 +13,7 @@ class Sponsor extends Model{
     "Facebook" => 2,
   ];
 
-  public function getTypeAttribute($value){
+  public static function getType($value){
     return array_search($value, self::TYPE);
   }
 
