@@ -20,6 +20,7 @@ class SponsorSeeder extends Seeder{
       "name" => "STORMPubgmobile",
       "link" => "https://www.youtube.com/c/STORMPubgmobile",
       "required" => TRUE,
+      "channel_id" => "UCmtWeUIkdsqQyu7HP5yD6tQ",  //user_id = mtWeUIkdsqQyu7HP5yD6tQ
       "type" => Sponsor::TYPE["YouTube"]
     ]);
   }
