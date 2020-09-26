@@ -2,98 +2,96 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class TemplateController extends Controller{
   public function index(){
-    return view('template.home');
+    return view('home');
   }
 
   public function team(){
-    return view('template.pages.team');
+    return view('pages.team');
   }
 
   public function sponsors(){
-    return view('template.pages.sponsors');
+    return view('pages.sponsors');
   }
 
   public function gallery(){
-    return view('template.pages.gallery');
+    return view('pages.gallery');
   }
 
   public function faq(){
-    return view('template.pages.faq');
+    return view('pages.faq');
   }
 
   public function comingSoon(){
-    return view('template.pages.coming-soon');
+    return view('pages.coming-soon');
   }
 
   public function notFound(){
-    return view('template.pages.404');
+    return view('pages.404');
   }
 
   public function schedule(){
-    return view('template.tournament.schedule');
+    return view('tournament.schedule');
   }
 
   public function tournament(){
-    return view('template.tournament.tournament');
+    return view('tournament.tournament');
   }
 
   public function match(){
-    return view('template.tournament.match');
+    return view('tournament.match');
   }
 
   public function teamSingle(){
-    return view('template.tournament.team');
+    return view('tournament.team');
   }
 
   public function player(){
-    return view('template.tournament.player');
+    return view('tournament.player');
   }
 
   public function checkout(){
-    return view('template.other.checkout');
+    return view('other.checkout');
   }
 
-  public function myAccount(){
-    return view('template.other.my-account');
+  public function join(){
+    return view('join');
   }
 
   public function contact(){
-    return view('template.contact');
+    return view('contact');
   }
 
   public function blog1(){
-    return view('template.blog.blog-1');
+    return view('blog.blog-1');
   }
 
   public function blog2(){
-    return view('template.blog.blog-2');
+    return view('blog.blog-2');
   }
 
   public function blog3(){
-    return view('template.blog.blog-3');
+    return view('blog.blog-3');
   }
 
   public function blog4(){
-    return view('template.blog.blog-4');
+    return view('blog.blog-4');
   }
 
   public function blog5(){
-    return view('template.blog.blog-5');
+    return view('blog.blog-5');
   }
 
   public function singleBlog1(){
-    return view('template.blog.single-blog-1');
+    return view('blog.single-blog-1');
   }
 
   public function singleBlog2(){
-    return view('template.blog.single-blog-2');
+    return view('blog.single-blog-2');
   }
 
   public function singleBlog3(){
-    return view('template.blog.single-blog-3');
+    return view('blog.single-blog-3');
   }
 }

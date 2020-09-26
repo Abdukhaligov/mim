@@ -1,4 +1,4 @@
-@extends('template.layouts.app')
+@extends('layouts.app')
 
 @section('content')
   <!-- Start Page Title Area -->
@@ -16,8 +16,16 @@
       <div class="row">
         <div class="col-lg-8 col-md-12">
           <div class="blog-details-desc">
-            <div class="article-video">
-              <iframe src="https://www.youtube.com/embed/mvU-ngb7gMU"></iframe>
+            <div class="article-image-slides owl-carousel owl-theme">
+              <div class="article-image">
+                <img src="{{ asset('assets/img/main-blog-img2.jpg') }}" alt="image">
+              </div>
+              <div class="article-image">
+                <img src="{{ asset('assets/img/main-blog-img3.jpg') }}" alt="image">
+              </div>
+              <div class="article-image">
+                <img src="{{ asset('assets/img/main-blog-img4.jpg') }}" alt="image">
+              </div>
             </div>
             <div class="article-content">
               <div class="entry-meta">

@@ -1,105 +1,17 @@
-@extends('template.layouts.app')
+@extends('layouts.app')
 
 @section('content')
   <!-- Start Page Title Area -->
   <section class="page-title-area page-title-bg1">
     <div class="container">
       <div class="page-title-content">
-        <h1 title="Team">Team</h1>
+        <h1 title="Contact Us">Contact Us</h1>
       </div>
     </div>
   </section>
   <!-- End Page Title Area -->
-  <!-- Start Team Area -->
-  <section class="team-area ptb-100">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="single-team-member">
-            <img src="{{ asset('assets/img/team-member1.jpg') }}" alt="image">
-            <div class="content">
-              <h3>Sarah Taylor</h3>
-              <span>Sarah3s</span>
-            </div>
-            <a href="single-team.html" class="link-btn"></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="single-team-member">
-            <img src="{{ asset('assets/img/team-member2.jpg') }}" alt="image">
-            <div class="content">
-              <h3>Merv Adrian</h3>
-              <span>Zelda3s</span>
-            </div>
-            <a href="single-team.html" class="link-btn"></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="single-team-member">
-            <img src="{{ asset('assets/img/team-member3.jpg') }}" alt="image">
-            <div class="content">
-              <h3>Carla Gentry</h3>
-              <span>3s.King</span>
-            </div>
-            <a href="single-team.html" class="link-btn"></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="single-team-member">
-            <img src="{{ asset('assets/img/team-member4.jpg') }}" alt="image">
-            <div class="content">
-              <h3>Liam Oliver</h3>
-              <span>Junior.Zelda</span>
-            </div>
-            <a href="single-team.html" class="link-btn"></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="single-team-member">
-            <img src="{{ asset('assets/img/team-member5.jpg') }}" alt="image">
-            <div class="content">
-              <h3>Emma Olivia</h3>
-              <span>King.Zelda</span>
-            </div>
-            <a href="single-team.html" class="link-btn"></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="single-team-member">
-            <img src="{{ asset('assets/img/team-member6.jpg') }}" alt="image">
-            <div class="content">
-              <h3>Elijah William</h3>
-              <span>Zelda</span>
-            </div>
-            <a href="single-team.html" class="link-btn"></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="single-team-member">
-            <img src="{{ asset('assets/img/team-member8.jpg') }}" alt="image">
-            <div class="content">
-              <h3>Kylo Jennar</h3>
-              <span>Zelda.Kylo</span>
-            </div>
-            <a href="single-team.html" class="link-btn"></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="single-team-member">
-            <img src="{{ asset('assets/img/team-member7.jpg') }}" alt="image">
-            <div class="content">
-              <h3>Lucas Luiz</h3>
-              <span>luiz.zelda</span>
-            </div>
-            <a href="single-team.html" class="link-btn"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Team Area -->
   <!-- Start Contact Area -->
-  <section class="contact-area pb-100">
+  <section class="contact-area ptb-100">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-12">

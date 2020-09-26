@@ -1,4 +1,4 @@
-@extends('template.layouts.app')
+@extends('layouts.app')
 
 @section('content')
   <!-- Start Coming Soon Area -->

@@ -1,15 +1,93 @@
-@extends('template.layouts.app')
+@extends('layouts.app')
 
 @section('content')
   <!-- Start Page Title Area -->
   <section class="page-title-area page-title-bg1">
     <div class="container">
       <div class="page-title-content">
-        <h1 title="Contact Us">Contact Us</h1>
+        <h1 title="Sponsors">Sponsors</h1>
       </div>
     </div>
   </section>
   <!-- End Page Title Area -->
+  <!-- Start Partner Area -->
+  <div class="partner-area pt-100 pb-70">
+    <div class="container">
+      <div class="section-title">
+        <span class="sub-title">PLATINUM SPONSORS</span>
+      </div>
+      <div class="partner-slides owl-carousel owl-theme">
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img1.png') }}" alt="image"></a>
+        </div>
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img2.png') }}" alt="image"></a>
+        </div>
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img3.png') }}" alt="image"></a>
+        </div>
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img4.png') }}" alt="image"></a>
+        </div>
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img5.png') }}" alt="image"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Partner Area -->
+  <!-- Start Partner Area -->
+  <div class="partner-area bg-image pt-100 pb-70 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="container">
+      <div class="section-title">
+        <span class="sub-title">GOLD SPONSORS</span>
+      </div>
+      <div class="partner-slides owl-carousel owl-theme">
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img1.png') }}" alt="image"></a>
+        </div>
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img2.png') }}" alt="image"></a>
+        </div>
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img3.png') }}" alt="image"></a>
+        </div>
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img4.png') }}" alt="image"></a>
+        </div>
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img5.png') }}" alt="image"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Partner Area -->
+  <!-- Start Partner Area -->
+  <div class="partner-area bg-1b060a pt-100 pb-70">
+    <div class="container">
+      <div class="section-title">
+        <span class="sub-title">Media Sponsors</span>
+      </div>
+      <div class="partner-slides owl-carousel owl-theme">
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img1.png') }}" alt="image"></a>
+        </div>
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img2.png') }}" alt="image"></a>
+        </div>
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img3.png') }}" alt="image"></a>
+        </div>
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img4.png') }}" alt="image"></a>
+        </div>
+        <div class="single-partner-item">
+          <a href="#" class="d-block"><img src="{{ asset('assets/img/partner-img5.png') }}" alt="image"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Partner Area -->
   <!-- Start Contact Area -->
   <section class="contact-area ptb-100">
     <div class="container">
