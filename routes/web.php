@@ -20,4 +20,10 @@ Route::prefix('template')->group(function(){
   Route::get('/faq', [TemplateController::class, 'faq'])->name('faq');
   Route::get('/coming-soon', [TemplateController::class, 'comingSoon'])->name('coming-soon');
   Route::get('/404', [TemplateController::class, 'notFound'])->name('404');
+
+  Route::get('/schedule', [TemplateController::class, 'schedule'])->name('schedule');
+  Route::get('/tournament', [TemplateController::class, 'tournament'])->name('tournament');
+  Route::get('/match', [TemplateController::class, 'match'])->name('match');
+  Route::get('/team-single', [TemplateController::class, 'teamSingle'])->name('team-single');
+  Route::get('/player', [TemplateController::class, 'player'])->name('player');
 });

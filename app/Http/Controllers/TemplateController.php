@@ -32,4 +32,20 @@ class TemplateController extends Controller{
   public function notFound(){
     return view('template.pages.404');
   }
+
+  public function schedule(){
+    return view('template.tournament.schedule');
+  }
+  public function tournament(){
+    return view('template.tournament.tournament');
+  }
+  public function match(){
+    return view('template.tournament.match');
+  }
+  public function teamSingle(){
+    return view('template.tournament.team');
+  }
+  public function player(){
+    return view('template.tournament.player');
+  }
 }

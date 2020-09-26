@@ -53,11 +53,11 @@
             </li>
             <li class="nav-item"><a href="#" class="nav-link">Tournament <i class="flaticon-down-arrow"></i></a>
               <ul class="dropdown-menu">
-                <li class="nav-item"><a href="stream-schedule.html" class="nav-link">Stream Schedule</a></li>
-                <li class="nav-item"><a href="single-tournament.html" class="nav-link">Tournament Single</a></li>
-                <li class="nav-item"><a href="single-match.html" class="nav-link">Match Single</a></li>
-                <li class="nav-item"><a href="single-team.html" class="nav-link">Team Single</a></li>
-                <li class="nav-item"><a href="single-player.html" class="nav-link">Player Single</a></li>
+                <li class="nav-item"><a href="{{ route('schedule') }}" class="nav-link">Stream Schedule</a></li>
+                <li class="nav-item"><a href="{{ route('tournament') }}" class="nav-link">Tournament Single</a></li>
+                <li class="nav-item"><a href="{{ route('match') }}" class="nav-link">Match Single</a></li>
+                <li class="nav-item"><a href="{{ route('team-single') }}" class="nav-link">Team Single</a></li>
+                <li class="nav-item"><a href="{{ route('player') }}" class="nav-link">Player Single</a></li>
               </ul>
             </li>
             <li class="nav-item"><a href="#" class="nav-link">Shop <i class="flaticon-down-arrow"></i></a>
