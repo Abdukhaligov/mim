@@ -25,7 +25,7 @@
   @auth
     @if(!Auth::user()->subscriber())
       <div class="alert alert-danger text-center" role="alert">
-        Your account is blocked. <a href="{{ route('profile') }}" class="alert-link">Please active your account</a>
+        Your account is blocked. <a href="{{ route('profile') }}" class="alert-link">Please activate your account</a>
       </div>
     @endif
   @endauth
