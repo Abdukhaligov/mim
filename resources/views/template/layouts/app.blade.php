@@ -68,16 +68,16 @@
             </li>
             <li class="nav-item"><a href="#" class="nav-link">Blog <i class="flaticon-down-arrow"></i></a>
               <ul class="dropdown-menu">
-                <li class="nav-item"><a href="blog-1.html" class="nav-link">Grid (2 in Row)</a></li>
-                <li class="nav-item"><a href="blog-2.html" class="nav-link">Grid (3 in Row)</a></li>
-                <li class="nav-item"><a href="blog-3.html" class="nav-link">Masonry (3 in Row)</a></li>
-                <li class="nav-item"><a href="blog-4.html" class="nav-link">Right Sidebar</a></li>
-                <li class="nav-item"><a href="blog-5.html" class="nav-link">Left Sidebar</a></li>
+                <li class="nav-item"><a href="{{ route('blog-1') }}" class="nav-link">Grid (2 in Row)</a></li>
+                <li class="nav-item"><a href="{{ route('blog-2') }}" class="nav-link">Grid (3 in Row)</a></li>
+                <li class="nav-item"><a href="{{ route('blog-3') }}" class="nav-link">Masonry (3 in Row)</a></li>
+                <li class="nav-item"><a href="{{ route('blog-4') }}" class="nav-link">Right Sidebar</a></li>
+                <li class="nav-item"><a href="{{ route('blog-5') }}" class="nav-link">Left Sidebar</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Single Post <i class='bx bx-plus'></i></a>
                   <ul class="dropdown-menu">
-                    <li class="nav-item"><a href="single-blog-1.html" class="nav-link">Default</a></li>
-                    <li class="nav-item"><a href="single-blog-2.html" class="nav-link">With Video</a></li>
-                    <li class="nav-item"><a href="single-blog-3.html" class="nav-link">With Image Slider</a></li>
+                    <li class="nav-item"><a href="{{ route('single-blog-1') }}" class="nav-link">Default</a></li>
+                    <li class="nav-item"><a href="{{ route('single-blog-2') }}" class="nav-link">With Video</a></li>
+                    <li class="nav-item"><a href="{{ route('single-blog-3') }}" class="nav-link">With Image Slider</a></li>
                   </ul>
                 </li>
               </ul>

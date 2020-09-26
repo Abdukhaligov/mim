@@ -31,4 +31,13 @@ Route::prefix('template')->group(function(){
   //other
   Route::get('/checkout', [TemplateController::class, 'checkout'])->name('checkout');
   Route::get('/my-account', [TemplateController::class, 'myAccount'])->name('my-account');
+  //blog
+  Route::get('/blog-1', [TemplateController::class, 'blog1'])->name('blog-1');
+  Route::get('/blog-2', [TemplateController::class, 'blog2'])->name('blog-2');
+  Route::get('/blog-3', [TemplateController::class, 'blog3'])->name('blog-3');
+  Route::get('/blog-4', [TemplateController::class, 'blog4'])->name('blog-4');
+  Route::get('/blog-5', [TemplateController::class, 'blog5'])->name('blog-5');
+  Route::get('/single-blog-1', [TemplateController::class, 'singleBlog1'])->name('single-blog-1');
+  Route::get('/single-blog-2', [TemplateController::class, 'singleBlog2'])->name('single-blog-2');
+  Route::get('/single-blog-3', [TemplateController::class, 'singleBlog3'])->name('single-blog-3');
 });

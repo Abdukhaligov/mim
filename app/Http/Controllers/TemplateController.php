@@ -64,4 +64,36 @@ class TemplateController extends Controller{
   public function contact(){
     return view('template.contact');
   }
+
+  public function blog1(){
+    return view('template.blog.blog-1');
+  }
+
+  public function blog2(){
+    return view('template.blog.blog-2');
+  }
+
+  public function blog3(){
+    return view('template.blog.blog-3');
+  }
+
+  public function blog4(){
+    return view('template.blog.blog-4');
+  }
+
+  public function blog5(){
+    return view('template.blog.blog-5');
+  }
+
+  public function singleBlog1(){
+    return view('template.blog.single-blog-1');
+  }
+
+  public function singleBlog2(){
+    return view('template.blog.single-blog-2');
+  }
+
+  public function singleBlog3(){
+    return view('template.blog.single-blog-3');
+  }
 }
