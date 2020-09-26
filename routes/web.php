@@ -14,6 +14,8 @@ Route::get('/test', [YoutubeAPIController::class, 'test'])->name('youtube_create
 Route::get('/test2', [YoutubeAPIController::class, 'test2']);
 Route::prefix('template')->group(function(){
   Route::get('/', [TemplateController::class, 'index'])->name('template');
+  Route::get('/contact', [TemplateController::class, 'contact'])->name('contact');
+  //pages
   Route::get('/team', [TemplateController::class, 'team'])->name('team');
   Route::get('/sponsors', [TemplateController::class, 'sponsors'])->name('sponsors');
   Route::get('/gallery', [TemplateController::class, 'gallery'])->name('gallery');

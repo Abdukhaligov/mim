@@ -36,15 +36,19 @@ class TemplateController extends Controller{
   public function schedule(){
     return view('template.tournament.schedule');
   }
+
   public function tournament(){
     return view('template.tournament.tournament');
   }
+
   public function match(){
     return view('template.tournament.match');
   }
+
   public function teamSingle(){
     return view('template.tournament.team');
   }
+
   public function player(){
     return view('template.tournament.player');
   }
@@ -52,7 +56,12 @@ class TemplateController extends Controller{
   public function checkout(){
     return view('template.other.checkout');
   }
+
   public function myAccount(){
     return view('template.other.my-account');
+  }
+
+  public function contact(){
+    return view('template.contact');
   }
 }
