@@ -44,11 +44,11 @@
             <li class="nav-item"><a href="#" class="nav-link">Pages <i class="flaticon-down-arrow"></i></a>
               <ul class="dropdown-menu">
                 <li class="nav-item"><a href="{{ route('team') }}" class="nav-link">Our Team</a></li>
-                <li class="nav-item"><a href="sponsors.html" class="nav-link">Our Sponsors</a></li>
-                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="faq.html" class="nav-link">FAQ Page</a></li>
-                <li class="nav-item"><a href="coming-soon.html" class="nav-link">Coming Soon</a></li>
-                <li class="nav-item"><a href="error-404.html" class="nav-link">404 Error Page</a></li>
+                <li class="nav-item"><a href="{{ route('sponsors') }}" class="nav-link">Our Sponsors</a></li>
+                <li class="nav-item"><a href="{{ route('gallery') }}" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="{{ route('faq') }}" class="nav-link">FAQ Page</a></li>
+                <li class="nav-item"><a href="{{ route('coming-soon') }}" class="nav-link">Coming Soon</a></li>
+                <li class="nav-item"><a href="{{ route('404') }}" class="nav-link">404 Error Page</a></li>
               </ul>
             </li>
             <li class="nav-item"><a href="#" class="nav-link">Tournament <i class="flaticon-down-arrow"></i></a>

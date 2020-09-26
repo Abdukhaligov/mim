@@ -89,7 +89,7 @@
         <div class="popular-leagues-box">
           <div class="popular-leagues-image">
             <div class="image bg1">
-              <img src="{{ asset('assets/img/popular-leagues-img1.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+              <img src="{{ asset('assets/img/popular-leagues-img1.jpg') }}" alt="image">
             </div>
           </div>
           <div class="popular-leagues-content">
@@ -124,7 +124,7 @@
         <div class="popular-leagues-box">
           <div class="popular-leagues-image">
             <div class="image bg2">
-              <img src="{{ asset('assets/img/popular-leagues-img2.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+              <img src="{{ asset('assets/img/popular-leagues-img2.jpg') }}" alt="image">
             </div>
           </div>
           <div class="popular-leagues-content">
@@ -159,7 +159,7 @@
         <div class="popular-leagues-box">
           <div class="popular-leagues-image">
             <div class="image bg3">
-              <img src="{{ asset('assets/img/popular-leagues-img3.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+              <img src="{{ asset('assets/img/popular-leagues-img3.jpg') }}" alt="image">
             </div>
           </div>
           <div class="popular-leagues-content">
@@ -194,7 +194,7 @@
         <div class="popular-leagues-box">
           <div class="popular-leagues-image">
             <div class="image bg4">
-              <img src="{{ asset('assets/img/popular-leagues-img4.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+              <img src="{{ asset('assets/img/popular-leagues-img4.jpg') }}" alt="image">
             </div>
           </div>
           <div class="popular-leagues-content">
@@ -238,7 +238,7 @@
       <div class="single-tournaments-box">
         <div class="tournaments-image">
           <div class="image bg1">
-            <img src="{{ asset('assets/img/upcoming-tournaments-img1.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+            <img src="{{ asset('assets/img/upcoming-tournaments-img1.jpg') }}" alt="image">
           </div>
         </div>
         <div class="tournaments-content">
@@ -299,14 +299,14 @@
         </div>
         <div class="tournaments-image">
           <div class="image bg2">
-            <img src="{{ asset('assets/img/upcoming-tournaments-img2.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+            <img src="{{ asset('assets/img/upcoming-tournaments-img2.jpg') }}" alt="image">
           </div>
         </div>
       </div>
       <div class="single-tournaments-box">
         <div class="tournaments-image">
           <div class="image bg3">
-            <img src="{{ asset('assets/img/upcoming-tournaments-img3.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+            <img src="{{ asset('assets/img/upcoming-tournaments-img3.jpg') }}" alt="image">
           </div>
         </div>
         <div class="tournaments-content">
@@ -1116,7 +1116,7 @@
             <div class="row">
               <div class="col-lg-7 col-md-7">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img1.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img1.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Fortnite 2 Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1125,7 +1125,7 @@
               </div>
               <div class="col-lg-5 col-md-5">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img2.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img2.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Pubg Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1134,7 +1134,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img3.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img3.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Free Fire Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1143,7 +1143,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img4.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img4.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Combat 5 Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1152,7 +1152,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img5.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img5.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Control Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1165,7 +1165,7 @@
             <div class="row">
               <div class="col-lg-4 col-md-6">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img3.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img3.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Free Fire Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1174,7 +1174,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img4.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img4.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Combat 5 Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1183,7 +1183,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img5.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img5.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Control Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1192,7 +1192,7 @@
               </div>
               <div class="col-lg-7 col-md-7">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img1.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img1.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Fortnite 2 Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1201,7 +1201,7 @@
               </div>
               <div class="col-lg-5 col-md-5">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img2.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img2.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Pubg Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1214,7 +1214,7 @@
             <div class="row">
               <div class="col-lg-7 col-md-7">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img1.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img1.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Fortnite 2 Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1223,7 +1223,7 @@
               </div>
               <div class="col-lg-5 col-md-5">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img2.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img2.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Pubg Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1232,7 +1232,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img3.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img3.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Free Fire Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1241,7 +1241,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img4.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img4.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Combat 5 Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1250,7 +1250,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img5.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img5.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Control Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1263,7 +1263,7 @@
             <div class="row">
               <div class="col-lg-4 col-md-6">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img3.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img3.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Free Fire Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1272,7 +1272,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img4.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img4.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Combat 5 Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1281,7 +1281,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img5.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img5.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Control Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1290,7 +1290,7 @@
               </div>
               <div class="col-lg-7 col-md-7">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img1.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img1.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Fortnite 2 Live <i class="flaticon-play"></i></h3>
                   </div>
@@ -1299,7 +1299,7 @@
               </div>
               <div class="col-lg-5 col-md-5">
                 <div class="single-live-stream-box">
-                  <img src="{{ asset('assets/img/live-stream-img2.jpg') }}') }}') }}') }}') }}') }}" alt="image">
+                  <img src="{{ asset('assets/img/live-stream-img2.jpg') }}" alt="image">
                   <div class="content">
                     <h3>Pubg Live <i class="flaticon-play"></i></h3>
                   </div>
