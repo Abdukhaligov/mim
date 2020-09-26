@@ -26,6 +26,7 @@ class Sponsor extends Resource{
       ID::make(__('ID'), 'id')->sortable(),
       Text::make('Name')->rules(['required']),
       Text::make('Link')->rules(['required']),
+      Text::make('Channel ID', 'channel_id')->rules(['required']),
       Select::make('Type')->rules(['required'])
         ->options([
           '1' => 'YouTube',
