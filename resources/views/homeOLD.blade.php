@@ -17,7 +17,7 @@
               @foreach($data["user"]->requiredSubscriptions as $sponsor)
                 <div>
                   <a target="_blank" href="{{$sponsor->link}}">{{$sponsor->name}}</a> <strong>
-                    <a href="{{ route('youtube_create_url')}}">CHECK</a>
+                    <a href="{{ route('youtube-create-url')}}">CHECK</a>
                   </strong>
                 </div>
               @endforeach

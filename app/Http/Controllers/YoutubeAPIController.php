@@ -12,13 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 
 class YoutubeAPIController extends Controller{
-  protected $homeController;
-
-  public function __construct(HomeController $homeController){
-    $this->homeController = $homeController;
-  }
-
-  public function test(){
+  public function createUrl(){
     $client = new Google_Client();
     $client->setApplicationName('API code samples');
     $client->setScopes([
@@ -31,7 +25,7 @@ class YoutubeAPIController extends Controller{
     return Redirect::to($authUrl);
   }
 
-  public function test2(Request $request){
+  public function check(Request $request){
     $channelId = 'UCmtWeUIkdsqQyu7HP5yD6tQ';
     $client = new Google_Client();
     $client->setApplicationName('API code samples');
@@ -49,13 +43,13 @@ class YoutubeAPIController extends Controller{
     ];
     $response = $service->subscriptions->listSubscriptions('id', $queryParams);
     if(!$response["items"]){
-      return redirect()->route('home');
+      return redirect()->route('profile');
     }else{
       /** @var User $user */
       $user = Auth::user();
       $sponsor = Sponsor::where('channel_id', '=', $channelId)->first();
       $user->subscriptions()->saveMany([$sponsor]);
-      return redirect()->route('home');
+      return redirect()->route('profile');
     }
   }
 }

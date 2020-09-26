@@ -51,10 +51,6 @@ class TemplateController extends Controller{
     return view('tournament.player');
   }
 
-  public function checkout(){
-    return view('other.checkout');
-  }
-
   public function join(){
     return view('join');
   }

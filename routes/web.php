@@ -1,19 +1,22 @@
 <?php
 
 use App\Http\Controllers\TemplateController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\YoutubeAPIController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/test', [YoutubeAPIController::class, 'test'])->name('youtube_create_url');
-Route::get('/test2', [YoutubeAPIController::class, 'test2']);
-Route::get('/', [TemplateController::class, 'index'])->name('template');
+Route::get('/', [TemplateController::class, 'index'])->name('home');
 //Route::get('/', function(){
 //  return view('welcome');
 //});
 Route::get('/contact', [TemplateController::class, 'contact'])->name('contact');
+Route::middleware(['auth'])->group(function(){
+  Route::get('/profile', [UserController::class, 'profile'])->name('profile');
+  Route::get('/create-url', [YoutubeAPIController::class, 'createUrl'])->name('youtube-create-url');
+  Route::get('/check', [YoutubeAPIController::class, 'check']);
+});
 //pages
 Route::prefix('pages')->group(function(){
   Route::get('/team', [TemplateController::class, 'team'])->name('team');
@@ -30,10 +33,6 @@ Route::prefix('tournament')->group(function(){
   Route::get('/match', [TemplateController::class, 'match'])->name('match');
   Route::get('/team-single', [TemplateController::class, 'teamSingle'])->name('team-single');
   Route::get('/player', [TemplateController::class, 'player'])->name('player');
-});
-//other
-Route::prefix('other')->group(function(){
-  Route::get('/checkout', [TemplateController::class, 'checkout'])->name('checkout');
 });
 //blog
 Route::prefix('blog')->group(function(){

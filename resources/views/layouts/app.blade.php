@@ -22,11 +22,18 @@
 <body>
 <!-- Start Navbar Area -->
 <div class="navbar-area navbar-style-two">
+  @auth
+    @if(!Auth::user()->subscriber())
+      <div class="alert alert-danger text-center" role="alert">
+        Your account is blocked. <a href="{{ route('profile') }}" class="alert-link">Please active your account</a>
+      </div>
+    @endif
+  @endauth
   <div class="zelda-responsive-nav">
     <div class="container">
       <div class="zelda-responsive-menu">
         <div class="logo">
-          <a href="{{ route('template') }}">
+          <a href="{{ route('home') }}">
             <img src="{{ asset('assets/img/logo.png') }}" alt="logo">
           </a>
         </div>
@@ -36,13 +43,13 @@
   <div class="zelda-nav">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand" href="{{ route('template') }}">
+        <a class="navbar-brand" href="{{ route('home') }}">
           <img src="{{ asset('assets/img/logo.png') }}" alt="logo">
         </a>
         <div class="collapse navbar-collapse mean-menu">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="{{ route('template') }}" class="nav-link {{Request::url() == route('template') ?"active": ""}}">
+              <a href="{{ route('home') }}" class="nav-link {{Request::url() == route('home') ?"active": ""}}">
                 Home
               </a>
             </li>
@@ -110,17 +117,6 @@
                 <li class="nav-item">
                   <a href="{{ route('player') }}" class="nav-link {{Request::url() == route('player') ?"active": ""}}">
                     Player Single
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link {{!Request::is('other*') ?: "active"}}">Other
-                <i class="flaticon-down-arrow"></i></a>
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a href="{{ route('checkout') }}" class="nav-link {{Request::url() == route('checkout') ?"active": ""}}">
-                    Checkout
                   </a>
                 </li>
               </ul>
@@ -201,7 +197,7 @@
                         </form>
                       </li>
                       <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="{{ route('profile') }}" class="nav-link">
                           My Account
                         </a>
                       </li>
@@ -270,7 +266,7 @@
       <button type="button" class="close" data-dismiss="modal"><i class='bx bx-x'></i></button>
       <div class="modal-body">
         <div class="logo">
-          <a href="{{ route('template') }}" class="d-inline-block"><img src="{{ asset('assets/img/logo.png') }}" alt="image"></a>
+          <a href="{{ route('home') }}" class="d-inline-block"><img src="{{ asset('assets/img/logo.png') }}" alt="image"></a>
         </div>
         <div class="instagram-list">
           <div class="row">
@@ -471,7 +467,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="logo">
-          <a href="{{ route('template') }}" class="d-inline-block"><img src="{{ asset('assets/img/logo.png') }}" alt="image"></a>
+          <a href="{{ route('home') }}" class="d-inline-block"><img src="{{ asset('assets/img/logo.png') }}" alt="image"></a>
           <ul class="footer-menu">
             <li class="nav-item"><a class="nav-link" href="#">Legal</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Terms of Use</a></li>
@@ -487,7 +483,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-6 col-sm-5">
-          <p><i class='bx bx-copyright'></i>2020 <a href="{{ route('template') }}">MIM</a> games Pty Ltd.</p>
+          <p><i class='bx bx-copyright'></i>2020 <a href="{{ route('home') }}">MIM</a> games Pty Ltd.</p>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-7">
           <div class="lang-switcher">

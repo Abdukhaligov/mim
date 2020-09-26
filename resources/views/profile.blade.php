@@ -2,10 +2,15 @@
 
 @section('content')
   <!-- Start Page Title Area -->
-  <section class="page-title-area page-title-bg1">
+  <section class="page-title-area page-title-bg1"
+           @if(!Auth::user()->subscriber())
+           style="padding: 140px 0px 0px 0px;"
+           @else
+           style="padding: 70px 0px 0px 0px;"
+    @endif>
     <div class="container">
       <div class="page-title-content">
-        <h1 title="Checkout">Checkout</h1>
+        <h1 title="My profile" style="font-size: 80px;">My profile</h1>
       </div>
     </div>
   </section>
@@ -13,10 +18,6 @@
   <!-- Start Checkout Area -->
   <section class="checkout-area ptb-100">
     <div class="container">
-      <div class="user-actions">
-        <i class='bx bx-log-in'></i>
-        <span>Returning customer? <a href="profile-authentication.html">Click here to login</a></span>
-      </div>
       <form>
         <div class="row">
           <div class="col-lg-6 col-md-12">
@@ -114,93 +115,23 @@
           </div>
           <div class="col-lg-6 col-md-12">
             <div class="order-details">
-              <h3 class="title">Your Order</h3>
-              <div class="order-table table-responsive">
-                <table class="table table-bordered">
-                  <thead>
-                  <tr>
-                    <th scope="col">Product Name</th>
-                    <th scope="col">Total</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td class="product-name">
-                      <a href="#">Note Book Mockup</a>
-                    </td>
-                    <td class="product-total">
-                      <span class="subtotal-amount">$250.00</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="product-name">
-                      <a href="#">Motivational Book Cover</a>
-                    </td>
-                    <td class="product-total">
-                      <span class="subtotal-amount">$200.00</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="product-name">
-                      <a href="#">Book Cover Softcover</a>
-                    </td>
-                    <td class="product-total">
-                      <span class="subtotal-amount">$200.00</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="product-name">
-                      <a href="#">Stop and Take a Second</a>
-                    </td>
-                    <td class="product-total">
-                      <span class="subtotal-amount">$150.00</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="order-subtotal">
-                      <span>Cart Subtotal</span>
-                    </td>
-                    <td class="order-subtotal-price">
-                      <span class="order-subtotal-amount">$1683.50</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="order-shipping">
-                      <span>Shipping</span>
-                    </td>
-                    <td class="shipping-price">
-                      <span>$30.00</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="total-price">
-                      <span>Order Total</span>
-                    </td>
-                    <td class="product-subtotal">
-                      <span class="subtotal-amount">$750.00</span>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
+              <h3 class="title">Your status</h3>
               <div class="payment-box">
                 <div class="payment-method">
-                  <p>
-                    <input type="radio" id="direct-bank-transfer" name="radio-group" checked>
-                    <label for="direct-bank-transfer">Direct Bank Transfer</label>
-                    Make your payment directly into our bank account. Please use your Order ID as the payment reference.
-                    Your order will not be shipped until the funds have cleared in our account.
-                  </p>
-                  <p>
-                    <input type="radio" id="paypal" name="radio-group">
-                    <label for="paypal">PayPal</label>
-                  </p>
-                  <p>
-                    <input type="radio" id="cash-on-delivery" name="radio-group">
-                    <label for="cash-on-delivery">Cash on Delivery</label>
-                  </p>
+                  @if(!$data["user"]->subscriber)
+                    <h1>Please subscribe to this channels</h1>
+                    @foreach($data["user"]->requiredSubscriptions as $sponsor)
+                      <div>
+                        <h2 class="text-center" style="text-decoration: underline">
+                          <a target="_blank" href="{{$sponsor->link}}">{{$sponsor->name}}</a>
+                        </h2>
+                      </div>
+                      <a class="default-btn" href="{{ route('youtube-create-url')}}">CHECK</a>
+                    @endforeach
+                  @else
+                    <h1>Your account is activated</h1>
+                  @endif
                 </div>
-                <a href="#" class="default-btn">Place Order</a>
               </div>
             </div>
           </div>

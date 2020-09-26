@@ -6,7 +6,7 @@
     <div class="d-table">
       <div class="d-table-cell">
         <div class="coming-soon-content">
-          <a href="{{ route('template') }}" class="logo">
+          <a href="{{ route('home') }}" class="logo">
             <img src="{{ asset('assets/img/logo.png') }}" alt="image">
           </a>
           <h2>We Are Launching Soon</h2>
