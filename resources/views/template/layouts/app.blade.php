@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.min.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
-  <title>Zelda - eSports & Gaming Template</title>
+  <title>Meet Your Maker</title>
   <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
 </head>
 <body>
@@ -292,9 +292,9 @@
         </div>
         <div class="sidebar-contact-info">
           <h2>
-            <a href="tel:+8802419268615">+880 241 926 8615</a>
+            <a href="tel:+994703505496">+994 70 350 54 96</a>
             <span>OR</span>
-            <a href="mailto:hello@zelda.com">hello@zelda.com</a>
+            <a href="mailto:hikmat.pou@gmail.com">hikmat.pou@gmail.com</a>
           </h2>
         </div>
         <ul class="social-list">
@@ -337,7 +337,7 @@
     <div class="container">
       <div class="subscribe-inner ptb-100 jarallax" data-jarallax='{"speed": 0.3}'>
         <span class="sub-title">Get Updates</span>
-        <h2>Zelda Newsletter</h2>
+        <h2>Newsletter</h2>
         <form class="newsletter-form" data-toggle="validator">
           <label><i class="flaticon-null-1"></i></label>
           <input type="text" class="input-newsletter" placeholder="Enter your email address" name="EMAIL" required autocomplete="off">
@@ -459,7 +459,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-6 col-sm-5">
-          <p><i class='bx bx-copyright'></i>2020 <a href="{{ route('template') }}">Zelda</a> games Pty Ltd.</p>
+          <p><i class='bx bx-copyright'></i>2020 <a href="{{ route('template') }}">MIM</a> games Pty Ltd.</p>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-7">
           <div class="lang-switcher">

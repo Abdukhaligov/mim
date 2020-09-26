@@ -9,13 +9,13 @@
           <div class="col-lg-4 col-md-12">
             <div class="main-banner-content">
               <span class="sub-title">Enjoy The Game</span>
-              <div class="logo">
+              <div class="logo" style="display: none">
                 <img src="{{ asset('assets/img/zelda.png') }}" alt="image">
               </div>
               <h6>Available Now</h6>
               <div class="btn-box">
                 <a href="#" class="default-btn">Purchase Now</a>
-                <a href="contact.html" class="optional-btn">Free Trial</a>
+                <a href="{{ route('contact') }}" class="optional-btn">Free Trial</a>
               </div>
             </div>
           </div>
@@ -33,13 +33,13 @@
           <div class="col-lg-4 col-md-12">
             <div class="main-banner-content">
               <span class="sub-title">Enjoy The Game</span>
-              <div class="logo">
+              <div class="logo" style="display: none">
                 <img src="{{ asset('assets/img/zelda.png') }}" alt="image">
               </div>
               <h6>Available Now</h6>
               <div class="btn-box">
                 <a href="#" class="default-btn">Purchase Now</a>
-                <a href="contact.html" class="optional-btn">Free Trial</a>
+                <a href="{{ route('contact') }}" class="optional-btn">Free Trial</a>
               </div>
             </div>
           </div>
@@ -57,13 +57,13 @@
           <div class="col-lg-4 col-md-12">
             <div class="main-banner-content">
               <span class="sub-title">Enjoy The Game</span>
-              <div class="logo">
+              <div class="logo" style="display: none">
                 <img src="{{ asset('assets/img/zelda.png') }}" alt="image">
               </div>
               <h6>Available Now</h6>
               <div class="btn-box">
                 <a href="#" class="default-btn">Purchase Now</a>
-                <a href="contact.html" class="optional-btn">Free Trial</a>
+                <a href="{{ route('contact') }}" class="optional-btn">Free Trial</a>
               </div>
             </div>
           </div>
