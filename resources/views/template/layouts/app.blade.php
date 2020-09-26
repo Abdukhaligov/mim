@@ -40,49 +40,147 @@
         </a>
         <div class="collapse navbar-collapse mean-menu">
           <ul class="navbar-nav">
-            <li class="nav-item"><a href="{{ route('template') }}" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Pages <i class="flaticon-down-arrow"></i></a>
+            <li class="nav-item">
+              <a href="{{ route('template') }}" class="nav-link {{Request::url() == route('template') ?"active": ""}}">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link {{!Request::is('template/pages*') ?: "active"}}">
+                Pages <i class="flaticon-down-arrow"></i>
+              </a>
               <ul class="dropdown-menu">
-                <li class="nav-item"><a href="{{ route('team') }}" class="nav-link">Our Team</a></li>
-                <li class="nav-item"><a href="{{ route('sponsors') }}" class="nav-link">Our Sponsors</a></li>
-                <li class="nav-item"><a href="{{ route('gallery') }}" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="{{ route('faq') }}" class="nav-link">FAQ Page</a></li>
-                <li class="nav-item"><a href="{{ route('coming-soon') }}" class="nav-link">Coming Soon</a></li>
-                <li class="nav-item"><a href="{{ route('404') }}" class="nav-link">404 Error Page</a></li>
+                <li class="nav-item">
+                  <a href="{{ route('team') }}" class="nav-link {{Request::url() == route('team') ?"active": ""}}">
+                    Our Team
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('sponsors') }}" class="nav-link {{Request::url() == route('sponsors') ?"active": ""}}">
+                    Our Sponsors
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('gallery') }}" class="nav-link {{Request::url() == route('gallery') ?"active": ""}}">
+                    Gallery
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('faq') }}" class="nav-link {{Request::url() == route('faq') ?"active": ""}}">
+                    FAQ Page
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('coming-soon') }}" class="nav-link {{Request::url() == route('coming-soon') ?"active": ""}}">
+                    Coming Soon
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('404') }}" class="nav-link {{Request::url() == route('404') ?"active": ""}}">
+                    404 Error Page
+                  </a>
+                </li>
               </ul>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">Tournament <i class="flaticon-down-arrow"></i></a>
+            <li class="nav-item">
+              <a href="#" class="nav-link {{!Request::is('template/tournament*') ?: "active"}}">Tournament <i class="flaticon-down-arrow"></i></a>
               <ul class="dropdown-menu">
-                <li class="nav-item"><a href="{{ route('schedule') }}" class="nav-link">Stream Schedule</a></li>
-                <li class="nav-item"><a href="{{ route('tournament') }}" class="nav-link">Tournament Single</a></li>
-                <li class="nav-item"><a href="{{ route('match') }}" class="nav-link">Match Single</a></li>
-                <li class="nav-item"><a href="{{ route('team-single') }}" class="nav-link">Team Single</a></li>
-                <li class="nav-item"><a href="{{ route('player') }}" class="nav-link">Player Single</a></li>
+                <li class="nav-item">
+                  <a href="{{ route('schedule') }}" class="nav-link {{Request::url() == route('schedule') ?"active": ""}}">
+                    Stream Schedule
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('tournament') }}" class="nav-link {{Request::url() == route('tournament') ?"active": ""}}">
+                    Tournament Single
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('match') }}" class="nav-link {{Request::url() == route('match') ?"active": ""}}">
+                    Match Single
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('team-single') }}" class="nav-link {{Request::url() == route('team-single') ?"active": ""}}">
+                    Team Single
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('player') }}" class="nav-link {{Request::url() == route('player') ?"active": ""}}">
+                    Player Single
+                  </a>
+                </li>
               </ul>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">Other <i class="flaticon-down-arrow"></i></a>
+            <li class="nav-item">
+              <a href="#" class="nav-link {{!Request::is('template/other*') ?: "active"}}">Other <i class="flaticon-down-arrow"></i></a>
               <ul class="dropdown-menu">
-                <li class="nav-item"><a href="{{ route('checkout') }}" class="nav-link">Checkout</a></li>
-                <li class="nav-item"><a href="{{ route('my-account') }}" class="nav-link">My Account</a></li>
+                <li class="nav-item">
+                  <a href="{{ route('checkout') }}" class="nav-link {{Request::url() == route('checkout') ?"active": ""}}">
+                    Checkout
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('my-account') }}" class="nav-link {{Request::url() == route('my-account') ?"active": ""}}">
+                    My Account
+                  </a>
+                </li>
               </ul>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">Blog <i class="flaticon-down-arrow"></i></a>
+            <li class="nav-item">
+              <a href="#" class="nav-link {{!Request::is('template/blog*') ?: "active"}}">Blog <i class="flaticon-down-arrow"></i></a>
               <ul class="dropdown-menu">
-                <li class="nav-item"><a href="{{ route('blog-1') }}" class="nav-link">Grid (2 in Row)</a></li>
-                <li class="nav-item"><a href="{{ route('blog-2') }}" class="nav-link">Grid (3 in Row)</a></li>
-                <li class="nav-item"><a href="{{ route('blog-3') }}" class="nav-link">Masonry (3 in Row)</a></li>
-                <li class="nav-item"><a href="{{ route('blog-4') }}" class="nav-link">Right Sidebar</a></li>
-                <li class="nav-item"><a href="{{ route('blog-5') }}" class="nav-link">Left Sidebar</a></li>
+                <li class="nav-item">
+                  <a href="{{ route('blog-1') }}" class="nav-link {{Request::url() == route('blog-1') ?"active": ""}}">
+                    Grid (2 in Row)
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('blog-2') }}" class="nav-link {{Request::url() == route('blog-2') ?"active": ""}}">
+                    Grid (3 in Row)
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('blog-3') }}" class="nav-link {{Request::url() == route('blog-3') ?"active": ""}}">
+                    Masonry (3 in Row)
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('blog-4') }}" class="nav-link {{Request::url() == route('blog-4') ?"active": ""}}">
+                    Right Sidebar
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('blog-5') }}" class="nav-link {{Request::url() == route('blog-5') ?"active": ""}}">
+                    Left Sidebar
+                  </a>
+                </li>
                 <li class="nav-item"><a href="#" class="nav-link">Single Post <i class='bx bx-plus'></i></a>
                   <ul class="dropdown-menu">
-                    <li class="nav-item"><a href="{{ route('single-blog-1') }}" class="nav-link">Default</a></li>
-                    <li class="nav-item"><a href="{{ route('single-blog-2') }}" class="nav-link">With Video</a></li>
-                    <li class="nav-item"><a href="{{ route('single-blog-3') }}" class="nav-link">With Image Slider</a></li>
+                    <li class="nav-item">
+                      <a href="{{ route('single-blog-1') }}" class="nav-link {{Request::url() == route('single-blog-1') ?"active": ""}}">
+                        Default
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="{{ route('single-blog-2') }}" class="nav-link {{Request::url() == route('single-blog-2') ?"active": ""}}">
+                        With Video
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="{{ route('single-blog-3') }}" class="nav-link {{Request::url() == route('single-blog-3') ?"active": ""}}">
+                        With Image Slider
+                      </a>
+                    </li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
+            <li class="nav-item">
+              <a href="{{ route('contact') }}" class="nav-link  {{Request::url() == route('contact') ?"active": ""}}">
+                Contact
+              </a>
+            </li>
           </ul>
           <div class="others-option d-flex align-items-center">
             <div class="option-item">
