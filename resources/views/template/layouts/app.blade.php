@@ -60,14 +60,10 @@
                 <li class="nav-item"><a href="{{ route('player') }}" class="nav-link">Player Single</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">Shop <i class="flaticon-down-arrow"></i></a>
+            <li class="nav-item"><a href="#" class="nav-link">Other <i class="flaticon-down-arrow"></i></a>
               <ul class="dropdown-menu">
-                <li class="nav-item"><a href="products-list-1.html" class="nav-link">Products List 01</a></li>
-                <li class="nav-item"><a href="products-list-2.html" class="nav-link">Products List 02</a></li>
-                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
-                <li class="nav-item"><a href="checkout.html" class="nav-link">Checkout</a></li>
-                <li class="nav-item"><a href="single-products.html" class="nav-link">Products Details</a></li>
-                <li class="nav-item"><a href="my-account.html" class="nav-link">My Account</a></li>
+                <li class="nav-item"><a href="{{ route('checkout') }}" class="nav-link">Checkout</a></li>
+                <li class="nav-item"><a href="{{ route('my-account') }}" class="nav-link">My Account</a></li>
               </ul>
             </li>
             <li class="nav-item"><a href="#" class="nav-link">Blog <i class="flaticon-down-arrow"></i></a>

@@ -48,4 +48,11 @@ class TemplateController extends Controller{
   public function player(){
     return view('template.tournament.player');
   }
+
+  public function checkout(){
+    return view('template.other.checkout');
+  }
+  public function myAccount(){
+    return view('template.other.my-account');
+  }
 }
