@@ -13,12 +13,12 @@ class SponsorSeeder extends Seeder{
     Sponsor::create([
       "name" => "PubgMobileAzerbaijan",
       "link" => "https://www.facebook.com/groups/PubgMobileAzerbaijan1",
-      "required" => TRUE,
+      "required" => FALSE,
       "type" => Sponsor::TYPE["Facebook"]
     ]);
     Sponsor::create([
       "name" => "STORMPubgmobile",
-      "link" => "https://www.youtube.com/c/STORMPubgmobile",
+      "link" => "https://www.youtube.com/channel/UCmtWeUIkdsqQyu7HP5yD6tQ",
       "required" => TRUE,
       "channel_id" => "UCmtWeUIkdsqQyu7HP5yD6tQ",  //user_id = mtWeUIkdsqQyu7HP5yD6tQ
       "type" => Sponsor::TYPE["YouTube"]
