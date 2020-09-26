@@ -107,8 +107,8 @@ class RegisterController extends Controller{
    * @return mixed|void
    */
   protected function registered(Request $request, $user){
-    $webhook = env('DISCORD_WEBHOOK_REGISTER', false);
-    if ($webhook){
+    $webhook = env('DISCORD_WEBHOOK_REGISTER', FALSE);
+    if($webhook){
       Discord::send($webhook, "$user->name, $user->email");
     }
   }
