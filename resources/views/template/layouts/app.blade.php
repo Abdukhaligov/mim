@@ -211,14 +211,6 @@
         <div class="option-inner">
           <div class="others-option">
             <div class="option-item">
-              <div class="cart-btn">
-                <a href="#">
-                  <i class="flaticon-null-5"></i>
-                  <span>1</span>
-                </a>
-              </div>
-            </div>
-            <div class="option-item">
               <div class="search-box">
                 <i class="flaticon-search-1"></i>
               </div>
