@@ -243,9 +243,44 @@
         <div class="option-inner">
           <div class="others-option">
             <div class="option-item">
-              <div class="search-box">
+              <div class="search-box" style="display: none">
                 <i class="flaticon-search-1"></i>
               </div>
+              @auth
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link {{!Request::is('other*') ?: "active"}}">
+                      <i class='bx bx-user'></i> {{ Auth::user()->login }}
+                      <i class="flaticon-down-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="{{ route('logout') }}"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           class="nav-link">
+                          Logout
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                          @csrf
+                        </form>
+                      </li>
+                      <li class="nav-item">
+                        <a href="{{ route('profile') }}" class="nav-link">
+                          My Account
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              @else
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="{{ route('login') }}"
+                       class="nav-link {{Request::url() == route('login') || Request::url() == route('register') ? "active": ""}}">
+                      Login / Registration
+                    </a>
+                  </li>
+                </ul>
+              @endauth
             </div>
             <div class="option-item">
               <div class="side-menu-btn">

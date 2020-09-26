@@ -133,7 +133,7 @@ class LoginController extends Controller{
   protected function authenticated(Request $request, $user){
     $webhook = env('DISCORD_WEBHOOK_LOGIN', FALSE);
     if($webhook){
-      Discord::send($webhook, "$user->name, $user->email");
+      Discord::send($webhook, "$user->login, $user->email");
     }
   }
 

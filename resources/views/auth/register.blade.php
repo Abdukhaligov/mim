@@ -27,6 +27,7 @@
               <div class="form-group">
                 <label>Username & Email</label>
                 <input type="text" name="login" value="{{ old('login') }}" required class="form-control @error('login') is-invalid @enderror"
+                       autofocus
                        placeholder="Username">
                 @error('login')
                 <span class="invalid-feedback" role="alert">

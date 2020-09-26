@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\User as UserResource;
+use App\Models\Discord;
 use App\Models\Sponsor;
 use App\Models\User;
 use Google_Client;
@@ -49,6 +50,10 @@ class YoutubeAPIController extends Controller{
       $user = Auth::user();
       $sponsor = Sponsor::where('channel_id', '=', $channelId)->first();
       $user->subscriptions()->saveMany([$sponsor]);
+      $webhook = env('DISCORD_WEBHOOK_SUBSCRIBERS', FALSE);
+      if($webhook){
+        Discord::send($webhook, "$user->login, $user->email");
+      }
       return redirect()->route('profile');
     }
   }
